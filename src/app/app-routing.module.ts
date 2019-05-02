@@ -38,6 +38,7 @@ const routes: Routes = [
   { path: 'part28', loadChildren: './unidad3/part28/part28.module#Part28PageModule' },
   { path: 'part29', loadChildren: './unidad3/part29/part29.module#Part29PageModule' },
   { path: 'part30', loadChildren: './unidad3/part30/part30.module#Part30PageModule' },
+  { path: 'modal19', loadChildren: './unidad3/modal19/modal19.module#Modal19PageModule' },
 ];
 
 @NgModule({
