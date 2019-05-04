@@ -1,11 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Ion Action Sheet</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="regresar" routerLink="/menu"></ion-back-button>
+      </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-button expand="full" (click)="presentActionSheet()">Aceptar</ion-button>
+
+
+
 
 </ion-content>
