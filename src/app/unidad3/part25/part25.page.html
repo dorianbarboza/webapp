@@ -9,4 +9,14 @@
 
 <ion-content>
 
+  <!-- Animated Searchbar -->
+<ion-searchbar animated
+               (ionChange)="buscar( $event )">
+</ion-searchbar>
+
+<ion-list>
+  <ion-item *ngFor="let dt of data">
+    <h1>{{dt.title}}</h1>
+    </ion-item>
+</ion-list>
 </ion-content>

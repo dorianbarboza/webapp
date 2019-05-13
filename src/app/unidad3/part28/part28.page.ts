@@ -9,7 +9,8 @@ export class Part28Page implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
+
+  
 
 }

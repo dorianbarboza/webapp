@@ -20,7 +20,7 @@ export class Part30Page implements OnInit {
     toast.present();
   }
 
-
+/*
   async presentToastWithOptions() {
     const toast = await this.toastController.create({
       header: 'Toast header',
@@ -44,6 +44,6 @@ export class Part30Page implements OnInit {
       ]
     });
     toast.present();
-  }
+  }*/
 
 }

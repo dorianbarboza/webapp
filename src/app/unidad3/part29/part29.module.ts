@@ -10,7 +10,26 @@ import { Part29Page } from './part29.page';
 const routes: Routes = [
   {
     path: '',
-    component: Part29Page
+    component: Part29Page,
+
+    children: [
+    {
+    path: 'schedule',
+    loadChildren: '../part17/part17.module#Part17PageModule'
+  },
+  {
+  path: 'speakers',
+  loadChildren: '../part1/part1.module#Part1PageModule'
+  },
+  {
+  path: 'map',
+  loadChildren: '../part2/part2.module#Part2PageModule'
+  },
+  {
+  path: 'about',
+  loadChildren: '../part3/part3.module#Part3PageModule'
+  }
+    ]
   }
 ];
 
