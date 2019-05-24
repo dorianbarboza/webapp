@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
+@Component({/*
+  template: `<ion-nav [root]="root"></ion-nav>
+  */
   selector: 'app-part20',
   templateUrl: './part20.page.html',
   styleUrls: ['./part20.page.scss'],
@@ -9,7 +11,8 @@ export class Part20Page implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
+/*
+  root = Part1Page;
+*/
 }
