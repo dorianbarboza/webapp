@@ -13,10 +13,12 @@ export class Part1Page{
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Albums',
+      backdropDismiss: false,
       buttons: [{
         text: 'Delete',
         role: 'destructive',
         icon: 'trash',
+        /*cssClas: 'rojo',*/
         handler: () => {
           console.log('Delete clicked');
         }

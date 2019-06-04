@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ion Alert</ion-title>
+    <ion-title>{{titulo}}</ion-title>
     <ion-buttons slot="end">
       <ion-back-button text="regresar" routerLink="/menu"></ion-back-button>
       </ion-buttons>
@@ -9,6 +9,6 @@
 
 <ion-content>
 
-  <ion-button expand="full" (click)="presentAlert()">Aceptar</ion-button>
+  <ion-button expand="full" (click)="presentAlertPrompt()">Aceptar</ion-button>
 
 </ion-content>

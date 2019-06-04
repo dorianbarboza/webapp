@@ -8,14 +8,41 @@ import { AlertController } from '@ionic/angular';
 })
 export class Part2Page{
 
+  titulo: string;
+
   constructor(public alertController: AlertController) { }
 
-  async presentAlert() {
+  async presentAlertPrompt() {
     const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      buttons: ['OK']
+      header: 'Introduce su nombre',
+      inputs: [
+        {
+          name: 'txtNombre',
+          type: 'text',
+          placeholder: 'Nombre'
+        },
+        {
+          name: 'txtApellido',
+          type: 'text',
+          placeholder: 'Apellido'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Confirm Cancel');
+          }
+        }, {
+          text: 'Ok',
+          handler: (data) => {
+            console.log('Confirm Ok', data);
+            this.titulo = data.txtNombre;
+          }
+        }
+      ]
     });
 
     await alert.present();
