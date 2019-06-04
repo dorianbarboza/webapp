@@ -9,11 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { PopoverComponent } from './components/popover/popover.component';
-import { ModalComponent } from './components/unidad3/modal/modal.component';
 
 @NgModule({
-  declarations: [AppComponent, PopoverComponent, ModalComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
@@ -21,6 +19,6 @@ import { ModalComponent } from './components/unidad3/modal/modal.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent, PopoverComponent, ModalComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

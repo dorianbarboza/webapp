@@ -5,22 +5,29 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Modal19Page } from './modal19.page';
+import { ModalPage } from './modal.page';
+import { ModalInfoPage } from '../modal-info/modal-info.page';
+import { ModalInfoPageModule } from '../modal-info/modal-info.module';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: Modal19Page
+    component: ModalPage
   }
 ];
 
 @NgModule({
+  entryComponents:[
+    ModalInfoPage
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ModalInfoPageModule
   ],
-  declarations: [Modal19Page]
+  declarations: [ModalPage]
 })
-export class Modal19PageModule {}
+export class ModalPageModule {}

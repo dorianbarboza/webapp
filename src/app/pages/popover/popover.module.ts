@@ -5,31 +5,29 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Part21Page } from './part21.page';
-/*
+import { PopoverPage } from './popover.page';
+
 import { PopInfoPage } from '../pop-info/pop-info.page';
-import { PopInfoPageModule } from '../pop-info/pop-info.module';*/
-
-
+import { PopInfoPageModule } from '../pop-info/pop-info.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: Part21Page
+    component: PopoverPage
   }
 ];
 
-@NgModule({/*
+@NgModule({
   entryComponents:[
     PopInfoPage
-  ],*/
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
-  //  PopInfoPageModule
+    RouterModule.forChild(routes),
+    PopInfoPageModule
   ],
-  declarations: [Part21Page]
+  declarations: [PopoverPage]
 })
-export class Part21PageModule {}
+export class PopoverPageModule {}

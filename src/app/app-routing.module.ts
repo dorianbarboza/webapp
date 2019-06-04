@@ -38,8 +38,11 @@ const routes: Routes = [
   { path: 'part28', loadChildren: './unidad3/part28/part28.module#Part28PageModule' },
   { path: 'part29', loadChildren: './unidad3/part29/part29.module#Part29PageModule' },
   { path: 'part30', loadChildren: './unidad3/part30/part30.module#Part30PageModule' },
-  { path: 'modal19', loadChildren: './unidad3/modal19/modal19.module#Modal19PageModule' },
   { path: 'login', loadChildren: './unidad/login/login.module#LoginPageModule' },
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
+  //{ path: 'pop-info', loadChildren: './pages/pop-info/pop-info.module#PopInfoPageModule' },
+  { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' },
+  //{ path: 'modal-info', loadChildren: './pages/modal-info/modal-info.module#ModalInfoPageModule' },
 ];
 
 @NgModule({

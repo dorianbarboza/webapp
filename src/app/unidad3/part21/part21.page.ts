@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PopoverController } from '@ionic/angular';
-import { PopoverComponent } from '../../components/popover/popover.component';
+//import { PopInfoPage } from '../pop-info/pop-info.page';
+//import { PopoverController } from '@ionic/angular';
 
 
 @Component({
@@ -10,17 +10,16 @@ import { PopoverComponent } from '../../components/popover/popover.component';
 })
 export class Part21Page implements OnInit {
 
-  constructor(public popoverController: PopoverController) {}
+  constructor(/*public popoverCtrl: PopoverController*/) {}
 
   ngOnInit() {}
+/*
+  async mostrarPop(){
 
-  async presentPopover(ev: any) {
-    const popover = await this.popoverController.create({
-      component: PopoverComponent,
-      event: ev,
-      translucent: true
+    const popover = await this.popoverCtrl.create({
+      component: ,
     });
-    return await popover.present();
-  }
 
-}
+    await popover.present();
+  }*/
+  }

@@ -18,7 +18,7 @@ export class Part1Page{
         text: 'Delete',
         role: 'destructive',
         icon: 'trash',
-        /*cssClas: 'rojo',*/
+        cssClass: 'rojo',
         handler: () => {
           console.log('Delete clicked');
         }
