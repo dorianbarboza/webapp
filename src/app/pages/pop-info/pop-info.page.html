@@ -1,5 +1,10 @@
 <ion-content>
 
   <h1>Popover Abierto</h1>
-
+  <ion-item *ngFor="let item of items; let i = index">
+    <ion-label>Item {{ i + 1}}</ion-label>
+    </ion-item>
+  <!--
+    <ion-button routerLink="/popover">Cerrar</ion-button>
+-->
 </ion-content>

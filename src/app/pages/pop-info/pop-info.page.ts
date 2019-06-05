@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopInfoPage implements OnInit {
 
+  items = Array(20);
+
   constructor() { }
 
   ngOnInit() {

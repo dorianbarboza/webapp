@@ -14,11 +14,13 @@ export class PopoverPage implements OnInit {
   ngOnInit() {
   }
 
-  async presentPopover(ev: any) {
+  async presentPopover(evento) {
     const popover = await this.popoverController.create({
       component: PopInfoPage,
-      event: ev,
-      translucent: true
+      event: evento,
+      translucent: true,
+      mode: 'ios'
+      //backdropDismiss: false
     });
     return await popover.present();
   }
